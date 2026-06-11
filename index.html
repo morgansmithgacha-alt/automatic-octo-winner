@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Loop Redirect</title>
   <script>
-    // URLs to loop through
     const links = [
       "https://francemapping44-sketch.github.io/FR4NCE6873",
       "https://maper.info/RNZFw8"
@@ -14,13 +13,10 @@
 
     function loop() {
       window.location.href = links[i];
-      i = (i + 1) % links.length; // move to next link, loop back to start
+      i = (i + 1) % links.length;
     }
 
-    // Change link every 3 seconds
     setInterval(loop, 3000);
-
-    // Start immediately
     loop();
   </script>
 </head>
