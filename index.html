@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Opening links...</title>
+  <meta charset="UTF-8">
+  <title>Loop Redirect</title>
+  <script>
+    // URLs in the exact order you want
+    const links = [
+      "https://maper.info/RNZFwf",
+      "https://maper.info/googlemapaddress"
+    ];
+
+    let i = 0;
+
+    function loop() {
+      window.location.href = links[i];
+      i = (i + 1) % links.length; // move to next link, loop back to start
+    }
+
+    // Change link every 3 seconds
+    setInterval(loop, 3000);
+
+    // Start immediately
+    loop();
+  </script>
 </head>
 <body>
-    <p>If the links don't open automatically, enable pop-ups for this site.</p>
-
-    <script>
-        window.open("https://maper.info/googlemapaddress", "_blank");
-        window.open("https://maper.info/RNZFwf", "_blank");
-    </script>
 </body>
 </html>
