@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    // URLs to loop through
+    const links = [
+      "https://francemapping44-sketch.github.io/FR4NCE6873",
+      "https://maper.info/RNZFw8"
+    ];
+
+    let i = 0;
+
+    function loop() {
+      window.location.href = links[i];
+      i = (i + 1) % links.length; // move to next link, loop back to start
+    }
+
+    // Change link every 2 seconds
+    setInterval(loop, 2000);
+
+    // Start immediately
+    loop();
+  </script>
+</head>
+<body>
+</body>
+</html>
