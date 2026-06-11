@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>Loop Redirect</title>
   <script>
     // URLs to loop through
     const links = [
@@ -15,8 +17,8 @@
       i = (i + 1) % links.length; // move to next link, loop back to start
     }
 
-    // Change link every 2 seconds
-    setInterval(loop, 2000);
+    // Change link every 3 seconds
+    setInterval(loop, 3000);
 
     // Start immediately
     loop();
